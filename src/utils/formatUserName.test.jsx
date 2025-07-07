@@ -20,6 +20,5 @@ describe("formatUserName", () => {
     expect(() => formatUserName("", "" )
   )});
   it("formate correctement les accents", () => {
-    expect(() => formatUserName("Élodie" , "Mark")
-     )});
+    expect(formatUserName ("Élodie" , "Mark")).toBe("Élodie Mark")});
 });
