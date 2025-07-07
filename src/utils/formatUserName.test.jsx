@@ -19,5 +19,7 @@ describe("formatUserName", () => {
   it("marque une erreur si nom et prénom sont manquant", () => {
     expect(() => formatUserName("", "" )
   )});
-
+  it("formate correctement les accents", () => {
+    expect(() => formatUserName("Élodie" , "Mark")
+     )});
 });
